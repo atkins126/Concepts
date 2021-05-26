@@ -25,12 +25,17 @@
 * [Chinook database](http://github.com/lerocha/chinook-database)
 * [SQLite](https://www.sqlite.org/)
 
-![Concepts](https://github.com/beNative/Concepts/blob/master/Wiki/Concepts_14-02-2017%2015-07-20.png)
+These libraries are also used in some of my open source projects:
+* [Notepas](https://github.com/beNative/Notepas)
+* [SnippetSource](https://github.com/beNative/SnippetSource)
+* [DataGrabber](https://github.com/beNative/DataGrabber)
+* [LogViewer](https://github.com/beNative/LogViewer)
+* [DDuce](https://github.com/beNative/DDuce)
 
 A copy of all libraries that the project depends on are included (except commercial ones of course) to avoid installation hassles for anyone who tries to compile the project. 
 In the [Concepts.inc](http://github.com/beNative/Concepts/blob/master/Concepts.inc) file you can specify which dependencies you want to have included in your build.
 
-Currently compilation has only been tested in Delphi 10 Seattle and later versions, but it should not be difficult to get it compiled in  Delphi 2010 or later.
+Currently compilation has only been tested in Delphi 10 Seattle and later versions, but it should not be difficult to get it compiled in Delphi 2010 or later.
 
 Check the [releases](http://github.com/beNative/Concepts/releases) to download a precompiled executable of the project.
 
@@ -44,35 +49,125 @@ Check the [releases](http://github.com/beNative/Concepts/releases) to download a
 ![Concepts.DDetours](https://github.com/beNative/Concepts/blob/master/Images/Concepts.DDetours.png)
 
 ## DSharp
+
 ### TreeviewPresenterList
+
 ![Concepts.DSharp.TreeviewPresenterList](https://github.com/beNative/Concepts/blob/master/Images/Concepts.DSharp.TreeviewPresenterList.png)
+
 ### TreeviewPresenterTree
+
 ![Concepts.DSharp.TreeviewPresenterTree](https://github.com/beNative/Concepts/blob/master/Images/Concepts.DSharp.TreeviewPresenterTree.png)
 
 ## FireMonkeyContainer
+
 ![Concepts.FireMonkeyContainer](https://github.com/beNative/Concepts/blob/master/Images/Concepts.FireMonkeyContainer.png)
 
 ## SQLBuilder4D
+
 ![Concepts.SQLBuilder4D](https://github.com/beNative/Concepts/blob/master/Images/Concepts.SQLBuilder4D.png)
 
+## ZeroMQ
+
+![Concepts.ZeroMQ](https://github.com/beNative/Concepts/blob/master/Images/Concepts.ZeroMQ.png)
+
+## MQTT
+
+![Concepts.MQTT](https://github.com/beNative/Concepts/blob/master/Images/Concepts.MQTT.png)
+
 ## Spring4D
+
 ### Collections
+
 ![Concepts.Spring4D.Collections](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Spring4D.Collections.png)
+
 ### Interception
+
 ![Concepts.Spring4D.Interception](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Spring4D.Interception.png)
+
 ### LazyTypes
+
 ![Concepts.Spring4D.LazyTypes](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Spring4D.LazyTypes.png)
+
 ### MultiCastEvents
+
 ![Concepts.Spring4D.MultiCastEvents](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Spring4D.MultiCastEvents.png)
+
 ### ObjectDataSet
+
 ![Concepts.Spring4D.ObjectDataSet](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Spring4D.ObjectDataSet.png)
+
 ### Utils
+
 ![Concepts.Spring4D.Utils](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Spring4D.Utils.png)
 
 ## SynEdit
+
 ![Concepts.SynEdit](https://github.com/beNative/Concepts/blob/master/Images/Concepts.SynEdit.png)
 
+## TzObjectInspector
+
+![Concepts.TzObjectInspector](https://github.com/beNative/Concepts/blob/master/Images/Concepts.TzObjectInspector.png)
+
 ## VirtualTreeview
+
 ![Concepts.VirtualTreeview](https://github.com/beNative/Concepts/blob/master/Images/Concepts.VirtualTreeview.png)
 
+## Indy
 
+### Telnet client
+
+![Concepts.Indy.Telnet](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Indy.Telnet.png)
+
+## Synapse serial client
+
+![Concepts.Synapse.Serial](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Synapse.Serial.png)
+
+## System
+
+### Anonymous methods
+
+![Concepts.System.AnonymousMethods](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.AnonymousMethods.png)
+
+### Variants
+
+![Concepts.System.Variants](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.Variants.png)
+
+### TStringList
+
+![Concepts.System.TStringList](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.TStringList.png)
+
+### TVirtualInterface
+
+![Concepts.System.TVirtualInterface](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.TVirtualInterface.png)
+
+### Livebindings
+
+![Concepts.System.LiveBindings](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.LiveBindings.png)
+
+### Threads
+
+![Concepts.System.Threads](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.Threads.png)
+
+### Parallel Programming Library
+
+![Concepts.System.PPL](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.PPL.png)
+
+### Object Interfaces
+
+#### Interface demo
+
+![Concepts.System.Interfaces](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.Interfaces.png)
+
+#### Interface implementation by aggregation
+
+![Concepts.System.InterfaceImplementationByAggregation](https://github.com/beNative/Concepts/blob/master/Images/Concepts.System.InterfaceImplementationByAggregation.png)
+
+## VCL
+
+### TGridPanel
+
+![Concepts.Vcl.TGridPanel](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Vcl.TGridPanel.png)
+
+## Windows API
+
+![Concepts.Winapi.LockPaint](https://github.com/beNative/Concepts/blob/master/Images/Concepts.Winapi.LockPaint.png)
