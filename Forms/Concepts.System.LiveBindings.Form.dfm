@@ -9,7 +9,7 @@ object frmLiveBindings: TfrmLiveBindings
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
-  Font.Name = 'Tahoma'
+  Font.Name = 'Segoe UI'
   Font.Style = []
   OldCreateOrder = False
   Position = poDesigned
@@ -22,18 +22,18 @@ object frmLiveBindings: TfrmLiveBindings
   TextHeight = 13
   object splVertical: TSplitter
     Left = 305
-    Top = 29
+    Top = 35
     Width = 6
-    Height = 484
+    Height = 478
     ExplicitLeft = 251
     ExplicitTop = 0
     ExplicitHeight = 459
   end
   object pnlLeft: TPanel
     Left = 0
-    Top = 29
+    Top = 35
     Width = 305
-    Height = 484
+    Height = 478
     Align = alLeft
     BevelOuter = bvNone
     TabOrder = 0
@@ -53,9 +53,9 @@ object frmLiveBindings: TfrmLiveBindings
   end
   object pnlRight: TPanel
     Left = 311
-    Top = 29
+    Top = 35
     Width = 567
-    Height = 484
+    Height = 478
     Align = alClient
     BevelOuter = bvNone
     Font.Charset = DEFAULT_CHARSET
@@ -67,7 +67,7 @@ object frmLiveBindings: TfrmLiveBindings
     TabOrder = 1
     DesignSize = (
       567
-      484)
+      478)
     object lblLabel: TLabel
       Left = 6
       Top = 35
@@ -93,27 +93,27 @@ object frmLiveBindings: TfrmLiveBindings
       Layout = tlCenter
     end
     object lblCompanyName: TLabel
-      Left = 123
-      Top = 129
+      Left = 124
+      Top = 94
       Width = 76
       Height = 13
       Caption = 'CompanyName:'
       FocusControl = edtCompanyName
     end
     object lblFirstName: TLabel
-      Left = 123
-      Top = 156
+      Left = 124
+      Top = 121
       Width = 52
       Height = 13
       Caption = 'FirstName:'
       FocusControl = edtFirstName
     end
     object lblLastName: TLabel
-      Left = 123
-      Top = 183
-      Width = 47
+      Left = 124
+      Top = 148
+      Width = 51
       Height = 13
-      Caption = 'LastName'
+      Caption = 'LastName:'
       FocusControl = edtLastName
     end
     object lblButtonCaption: TLabel
@@ -143,9 +143,9 @@ object frmLiveBindings: TfrmLiveBindings
     object grdMain: TStringGrid
       Tag = 3
       Left = 6
-      Top = 240
+      Top = 201
       Width = 556
-      Height = 267
+      Height = 276
       Anchors = [akLeft, akTop, akRight]
       ColCount = 3
       DefaultColWidth = 120
@@ -261,8 +261,8 @@ object frmLiveBindings: TfrmLiveBindings
     end
     object edtLastName: TEdit
       Left = 205
-      Top = 180
-      Width = 164
+      Top = 145
+      Width = 132
       Height = 21
       TabOrder = 2
     end
@@ -352,9 +352,10 @@ object frmLiveBindings: TfrmLiveBindings
     TabOrder = 10
   end
   object pnlHeader: TPanel
-    Left = 0
-    Top = 0
-    Width = 878
+    AlignWithMargins = True
+    Left = 3
+    Top = 3
+    Width = 872
     Height = 29
     Align = alTop
     BevelOuter = bvNone
@@ -370,7 +371,7 @@ object frmLiveBindings: TfrmLiveBindings
     object lblHeader: TLabel
       Left = 0
       Top = 0
-      Width = 878
+      Width = 872
       Height = 29
       Align = alClient
       Alignment = taCenter
@@ -478,7 +479,7 @@ object frmLiveBindings: TfrmLiveBindings
     AutoPost = False
     RecordCount = 100
     Options = [loptAllowInsert, loptAllowDelete, loptAllowModify]
-    Left = 672
+    Left = 816
     Top = 176
   end
   object absMain: TAdapterBindSource
