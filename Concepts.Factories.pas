@@ -1,5 +1,5 @@
 {
-  Copyright (C) 2013-2021 Tim Sinaeve tim.sinaeve@gmail.com
+  Copyright (C) 2013-2022 Tim Sinaeve tim.sinaeve@gmail.com
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ uses
   Vcl.Controls, Vcl.StdCtrls, Vcl.DBGrids,
   Data.DB, Data.Bind.Components,
 
-  VirtualTrees,
+  VirtualTrees, VirtualTrees.Header, VirtualTrees.Types,
 
   Spring, Spring.Collections,
 

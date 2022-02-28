@@ -2,14 +2,12 @@ program Concepts;
 
 {$I Concepts.inc}
 
-{$R *.dres}
-
 uses
   Vcl.Themes,
   Vcl.Styles,
   Vcl.Forms,
   DDuce.Logger,
-  DDuce.Logger.Channels.ZeroMQ,
+  DDuce.Logger.Channels.Zmq,
   DDuce.Logger.Channels.WinIpc,
   Concepts.BTMemoryModule.Form in 'Forms\Concepts.BTMemoryModule.Form.pas' {frmBTMemoryModule},
   Concepts.ChromeTabs.Form in 'Forms\Concepts.ChromeTabs.Form.pas' {frmChromeTabs},
@@ -95,7 +93,8 @@ uses
   Concepts.SynEdit.Form in 'Forms\Concepts.SynEdit.Form.pas' {frmSynEdit},
   Concepts.Indy.TCP.Form in 'Forms\Concepts.Indy.TCP.Form.pas' {frmIndyTCP},
   Concepts.Vcl.Styles.Form in 'Forms\Concepts.Vcl.Styles.Form.pas' {frmVclStyles},
-  Concepts.KControls.KMemo.Form in 'Forms\Concepts.KControls.KMemo.Form.pas' {frmKMemo};
+  Concepts.KControls.KMemo.Form in 'Forms\Concepts.KControls.KMemo.Form.pas' {frmKMemo},
+  DDuce.DynamicRecord in 'Libraries\DDuce\DDuce.DynamicRecord.pas';
 
 {$R *.res}
 
@@ -103,7 +102,7 @@ uses
   all registered concepts. }
 const
 //  EXECUTE_BY_NAME = 'TKMemo control';
-//  EXECUTE_BY_NAME = 'Virtual treeview';
+//  EXECUTE_BY_NAME = 'Virtual treeview control';
 //  EXECUTE_BY_NAME = 'ZeroMQ';
 //  EXECUTE_BY_NAME = 'FireDAC';
 //  EXECUTE_BY_NAME = 'ORM';
@@ -119,8 +118,10 @@ begin
   {$WARNINGS ON}
   Application.Initialize;
   TConcepts.RegisterConcepts;
-  Logger.Channels.Add(TZeroMQChannel.Create);
-  Logger.Channels.Add(TWinIPCChannel.Create);
+  {$IFDEF CPUX86}
+  Logger.Channels.Add(TZmqChannel.Create);
+  {$ENDIF CPUX86}
+  Logger.Channels.Add(TWinipcChannel.Create);
   Logger.Clear;
   Logger.Info('Concepts started.');
   Application.CreateForm(TdmResources, dmResources);
